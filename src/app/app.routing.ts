@@ -81,6 +81,10 @@ export const routes: Routes = [
       {
         path: 'widgets',
         loadChildren: './views/widgets/widgets.module#WidgetsModule'
+      },
+      {
+        path: 'admin',
+        loadChildren: './views/admin-index/admin-index.module#AdminIndexModule'
       }
     ]
   }

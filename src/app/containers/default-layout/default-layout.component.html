@@ -48,10 +48,64 @@
   </ul>
 </app-header>
 <div class="app-body">
-  <app-sidebar [fixed]="true" [display]="'lg'">
-    <app-sidebar-nav [navItems]="navItems" [perfectScrollbar] [disabled]="sidebarMinimized"></app-sidebar-nav>
-    <app-sidebar-minimizer></app-sidebar-minimizer>
-  </app-sidebar>
+
+
+
+  <div class="sidebar">
+    <nav class="sidebar-nav">
+      <ul class="nav">
+
+        <li class="nav-title">Nav Title</li>
+
+        <!--首页-->
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/admin']" routerLinkActive="active">
+            <i class="nav-icon cui-speedometer"></i>文章审核
+          </a>
+        </li>
+
+
+
+
+
+
+
+
+        <!--<li class="nav-item">-->
+          <!--<a class="nav-link" href="#">-->
+            <!--<i class="nav-icon cui-speedometer"></i> With badge-->
+            <!--<span class="badge badge-primary">NEW</span>-->
+          <!--</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown appNavDropdownToggle>-->
+          <!--<a class="nav-link nav-dropdown-toggle" href="#" >-->
+            <!--<i class="nav-icon cui-puzzle"></i> Nav dropdown-->
+          <!--</a>-->
+
+
+
+
+          <!--<ul class="nav-dropdown-items">-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link" href="#" routerLinkActive="active">-->
+                <!--<i class="nav-icon cui-puzzle"></i> Nav dropdown item-->
+              <!--</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link" >-->
+                <!--<i class="nav-icon cui-puzzle"></i> Nav dropdown item-->
+              <!--</a>-->
+            <!--</li>-->
+          <!--</ul>-->
+        <!--</li>-->
+      </ul>
+    </nav>
+    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+  </div>
+
+
+
+
   <!-- Main content -->
   <main class="main">
     <!-- Breadcrumb -->
